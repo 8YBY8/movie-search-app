@@ -1,0 +1,1 @@
+curl -X POST https://127.0.0.1:5500/backend/api/v1/reviews/new -H "Content-Type: application/json" -d '{"movieId": 12, "user": "Bing", "review": "goat"}'

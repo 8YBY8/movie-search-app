@@ -33,6 +33,7 @@ div_new.innerHTML = `
     </div>
   </div>
 `
+main.appendChild(div_new)
 
 returnReviews(APILINK); // show all the reviews of this movie
 

@@ -6,7 +6,6 @@ const movieTitle = url.searchParams.get("title")
 // doc: https://developer.themoviedb.org/docs/append-to-response
 // const APILINK = 'http://127.0.0.1:5500/backend/api/v1/reviews/';
 const APILINK = 'https://8yby8.github.io/movie-search-app/backend/api/v1/reviews/';
-// const APILINK = 'https://review-backend.beaucarnes.repl.co/api/v1/reviews/';
 
 
 const main = document.getElementById("section");

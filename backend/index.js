@@ -22,8 +22,7 @@ MongoClient.connect(
     {
         maxPoolSize: 50,
         wtimeoutMS: 2500,
-        useNewUrlParser: true,
-        // console.log("connected!!!")
+        // useNewUrlParser: true
     })
     // catch any error happens when you connect
     .catch(err => {
@@ -31,7 +30,7 @@ MongoClient.connect(
         process.exit(1) // ending the program
     })
     .then(async client => {
-        // await ReviewDAO.injectDB(client)
+        await ReviewDAO.injectDB(client)
         app.listen(port, () => {
             console.log(`listening on port ${port}`)
         })

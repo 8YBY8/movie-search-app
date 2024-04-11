@@ -49,12 +49,6 @@ input {
 }
 /* search bar ends here */
 
-.thumbnail {
-    height: 350px;
-    width: 300px;
-    border-radius: 19px;
-}
-
 .column {
     float: left;
     width: 25%;
@@ -66,4 +60,16 @@ input {
     padding: 15px;
     text-align: center;
     background-color: #151f30;
+}
+
+.thumbnail {
+    /* PC优先 */
+    /* max-height: 300px; 
+    max-width: 300px;  */
+    max-height: 0%; 
+    max-width: 100%; 
+    height: auto; /* maintain aspect ratio */
+    width: auto; /* maintain aspect ratio */
+    border-radius: 19px;
+    object-fit: cover; /* this will cover the area without stretching the image */
 }

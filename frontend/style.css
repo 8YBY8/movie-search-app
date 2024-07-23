@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: lightcoral;
+    background-color: black;
     font-family: sans-serif;
     color: white;
 }
@@ -11,14 +11,14 @@ body {
 /* search bar starts here */
 .topnav {
     overflow: hidden;
-    background-color: lightcyan;
+    background-color: blue;
     padding: 10px;
 }
 
 .topnav a{
     float: left;
     display: block;
-    color: white;
+    color: lightblue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;  /* remove the underline */
@@ -59,7 +59,7 @@ input {
     border-radius: 19px;
     padding: 15px;
     text-align: center;
-    background-color: lightskyblue;
+    /* background-color: lightgreen; */
 }
 
 .thumbnail {

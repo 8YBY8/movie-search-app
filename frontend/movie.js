@@ -28,7 +28,7 @@ div_new.innerHTML = `
           <p><strong>User: </strong>
             <input type="text" id="new_user" value="">
           </p>
-          <p><a href="#" onclick="saveReview('new_review', 'new_user')">💾</a>
+          <p><a href="#" onclick="saveReview('new_review', 'new_user')">Save</a>
           </p>
       </div>
     </div>
@@ -50,7 +50,7 @@ function returnReviews(url){
                     <div class="card" id="${review._id}">
                         <p><strong>Review: </strong>${review.review}</p>
                         <p><strong>User: </strong>${review.user}</p>
-                        <p><a href="#"onclick="editReview('${review._id}','${review.review}', '${review.user}')">✏️</a> <a href="#" onclick="deleteReview('${review._id}')">🗑</a></p>
+                        <p><a href="#"onclick="editReview('${review._id}','${review.review}', '${review.user}')">Edit</a> <a href="#" onclick="deleteReview('${review._id}')">🗑</a></p>
                     </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ function editReview(id, review, user) {
         <p><strong>User: </strong>
             <input type="text" id="${userInputId}" value="${user}">
         </p>
-        <p><a href="#" onclick="saveReview('${reviewInputId}', '${userInputId}', '${id}',)">💾</a>
+        <p><a href="#" onclick="saveReview('${reviewInputId}', '${userInputId}', '${id}',)">Save</a>
         </p>
     
     `

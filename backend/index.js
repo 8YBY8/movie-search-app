@@ -14,7 +14,7 @@ const MongoClient = mongodb.MongoClient
 const uri = `mongodb+srv://yubingyang9:13706854306Yu@cluster0.itvqll5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 // mongodb+srv://yubingyang9:<password>@cluster0.itvqll5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
-const port = 8000
+const port = process.env.port || 8000
 
 console.log("connecting " + uri)
 MongoClient.connect(
